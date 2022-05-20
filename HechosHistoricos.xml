@@ -1,6 +1,53 @@
 <?xml version="1.0" encoding="utf-8" ?>
+<!--
+<!DOCTYPE HechosHistoricos [
+        <!ELEMENT HechosHistoricos (HechosHistorico)>
+            <!ELEMENT HechosHistorico (Fecha)>
+        <!ELEMENT Fecha (Dia, mes , Año) >
+        <!ELEMENT Dia (#PCDATA)>
+        <!ELEMENT mes (#PCDATA)>
+        <!ELEMENT Año (#PCDATA)>
+        <!ATTLIST  HechosHistorico descripcion CDATA #REQUIRED>
+        ]>
 
+        -->
+
+<!DOCTYPE HechosHistoricos SYSTEM "HechosHistoricos.dtd">
 <HechosHistoricos>
+    <HechosHistorico descripcion = "">
+        <Fecha>
+            <FormatoFecha>
+            <Dia></Dia>
+            <mes></mes>
+            <Año></Año>
+
+            </FormatoFecha>
+
+
+        </Fecha>
+        <Epoca>
+            <Epoca1></Epoca1>
+        </Epoca>
+
+        <PersonajeDestacado>
+            Test persona <Nombre></Nombre> y fecha de nacimiento <FechaNacimiento></FechaNacimiento>
+        </PersonajeDestacado>
+
+    </HechosHistorico>
+    <HechosHistorico descripcion = "">
+        <Fecha>
+            2022-10-09
+
+
+
+
+        </Fecha>
+        <Epoca>
+            <Epoca2></Epoca2>
+        </Epoca>
+        <PersonajeDestacado> </PersonajeDestacado>
+
+    </HechosHistorico>
 
 
 </HechosHistoricos>
